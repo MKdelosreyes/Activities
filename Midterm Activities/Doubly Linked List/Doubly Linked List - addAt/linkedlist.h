@@ -168,20 +168,20 @@ public:
     	node* curr;
     	if (size == 0) {
     		cout << "Empty" << endl;
-		} else {
-			cout << "From HEAD: ";
+	} else {
+		cout << "From HEAD: ";
     		curr = head;
 	    	while (true) {
 	    		cout << curr->elem;
 	    		if (curr != tail) {
 	    			cout << " -> ";
-				} else {
-					cout << endl;
-                    break;
-				}
-	    		curr = curr->next;
+			} else {
+				cout << endl;
+                    		break;
 			}
-			cout << "From TAIL: ";
+	    		curr = curr->next;
+		}
+		cout << "From TAIL: ";
     		curr = tail;
 	    	while (true) {
 	    		cout << curr->elem;
